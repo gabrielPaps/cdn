@@ -2,7 +2,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=node
 
 .temp_cache/
-
+.env
 ### Node ###
 # Logs
 logs

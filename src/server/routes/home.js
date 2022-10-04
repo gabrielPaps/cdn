@@ -1,5 +1,7 @@
+import path from "path"
+
 export default (app) =>{
     app.get('/', (req, res) => {
-        res.send('Hello World!')
+        res.sendFile(path.join(__dirname,'./index.html'))
     })
 }

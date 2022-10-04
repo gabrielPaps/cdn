@@ -1,12 +1,18 @@
 import express from "express"
-let app = express()
+let router = express.Router()
 
 import home from './home.js'
+import offline from './offline.js'
+import cdn from './deliverCdn.js'
+import subscription from './subscription'
 
-async function routes(app){
-   home(app)
+async function routes(router){
+   home(router)
+   offline(router)
+   cdn(router)
+   subscription(router)
 }
 
-routes(app)
+routes(router)
 
-export default app
+export default router
